@@ -49,7 +49,7 @@ spec:
       volumes:
         - name: app-source
           hostPath:
-            path: /opt/sloopstash-crm-app
+            path: ${CRM_APP_SOURCE}
             type: Directory
         - name: nginx-log
           persistentVolumeClaim:
